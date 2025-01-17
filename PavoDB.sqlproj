@@ -56,5 +56,32 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\StoreProcedures" />
+    <Folder Include="dbo\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\Menu.sql" />
+    <Build Include="dbo\Tables\HeaderSection.sql" />
+    <Build Include="dbo\Tables\PlatformHighlights.sql" />
+    <Build Include="dbo\Tables\PageContent.sql" />
+    <Build Include="dbo\Tables\PageContentDetail.sql" />
+    <Build Include="dbo\Tables\SubscriptionDetails.sql" />
+    <Build Include="dbo\Tables\SubscriptionDescriptionList.sql" />
+    <Build Include="dbo\Tables\Testmonial.sql" />
+    <Build Include="dbo\Tables\ActivityMetrics.sql" />
+    <Build Include="dbo\Tables\Footer.sql" />
+    <Build Include="dbo\StoreProcedures\GetUser.sql" />
+    <Build Include="dbo\StoreProcedures\GetMenu.sql" />
+    <Build Include="dbo\StoreProcedures\GetHeaderSection.sql" />
+    <Build Include="dbo\StoreProcedures\GetPlatformHighlights.sql" />
+    <Build Include="dbo\StoreProcedures\GetPageContent.sql" />
+    <Build Include="dbo\StoreProcedures\GetPageContentDetail.sql" />
+    <Build Include="dbo\StoreProcedures\GetSubscriptionDetails.sql" />
+    <Build Include="dbo\StoreProcedures\GetSubscriptionDescriptionList.sql" />
+    <Build Include="dbo\StoreProcedures\GetTestmonial.sql" />
+    <Build Include="dbo\StoreProcedures\GetActivityMetrics.sql" />
+    <Build Include="dbo\StoreProcedures\GetFooter.sql" />
   </ItemGroup>
 </Project>
